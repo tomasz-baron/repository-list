@@ -38,7 +38,7 @@ function prepareList(list, updateDate) {
                 name: repo.name,
                 description: repo.description,
                 updated_at: repo.updated_at,
-                url: repo.url
+                url: repo.html_url
             };
         });
 }
