@@ -11,7 +11,7 @@
 function validateDate(update) {
     const parts = update.split('-');
     const d = new Date(parts[0], parts[1] - 1, parts[2]);
-    return d && (d.getMonth() + 1).toString() === parts[1];
+    return d && (d.getMonth() + 1) === +parts[1];
 }
 
 /**
