@@ -1,4 +1,4 @@
-Instal NPM packages
+Install NPM packages
 ```
 npm install
 ```
