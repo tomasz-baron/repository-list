@@ -15,7 +15,7 @@ function getList(userName) {
             if (response.ok) {
                 return response.json();
             } else {
-                throw new Error('Failed to fetch data about GitHub repositories');
+                throw new Error('Failed to fetch data from GitHub');
             }
         });
 }

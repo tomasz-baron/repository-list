@@ -1,7 +1,7 @@
 import { createList } from './repos-list.js';
 import { createEmptyListMessage } from './empty-list.js';
 import { getList } from './http-request.js';
-import { displayError } from './errors-message.js';
+import { displayError } from './error-message.js';
 import { validateParameters } from './validation.js';
 
 let repos = document.getElementsByTagName('repos')[0];
@@ -16,11 +16,12 @@ let repos = document.getElementsByTagName('repos')[0];
 function createContent(user) {
     const template = `
         <div id="header">
-            <span class="user-name">${user}</span>
+            <span class="user-name">Repositories list for username: ${user}</span>
         </div>
         <div id="content"></div>
     `;
     const contentHtml = document.createElement('div');
+    contentHtml.className = 'container';
     contentHtml.innerHTML = template;
     repos.parentNode.replaceChild(contentHtml, repos);
 }

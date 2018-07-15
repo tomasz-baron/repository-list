@@ -9,7 +9,7 @@
 function closeError() {
     const button = document.getElementById('close-button');
     button.removeEventListener('click', closeError);
-    const modal = document.getElementById('error-modal');
+    const modal = document.getElementById('error-overlay');
     modal.remove();
 }
 
@@ -21,19 +21,20 @@ function closeError() {
  */
 
 function displayError(message) {
+
     const modalHtml = document.createElement('div');
-    modalHtml.className = 'modal';
-    modalHtml.id = 'error-modal';
+    modalHtml.className = 'error-overlay';
+    modalHtml.id = 'error-overlay';
     const template = `
-        <header>
-            <span class="title">Error</span>
-        </header>
-        <section>
-            <span class="message">${message}</span>
-        </section>
-        <footer>
-            <button id="close-button" class="close-button">Close</button>
-        </footer>
+        <div class="error-dialog">
+            <header>
+                <span class="title">Error</span>
+            </header>
+            <section>${message}</section>
+            <footer>
+                <button id="close-button" class="close-button">Close</button>
+            </footer>
+        </div>
     `;
     modalHtml.innerHTML = template;
     const body = document.getElementsByTagName("body")[0];
