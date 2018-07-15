@@ -26,7 +26,7 @@ function createRow(rowData) {
 
 /**
  * 
- * This function creates header for lift os repositories
+ * This function creates header for list of repositories
  * @returns {string} Returns HTML template with header
  * 
  */
