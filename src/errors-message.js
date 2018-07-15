@@ -1,9 +1,24 @@
+/** @module errors-message */
+
+/**
+ * 
+ * This function removes click event for close button and removes modal from DOM
+ * 
+ */
+
 function closeError() {
     const button = document.getElementById('close-button');
     button.removeEventListener('click', closeError);
     const modal = document.getElementById('error-modal');
     modal.remove();
 }
+
+/**
+ * 
+ * This function shows modal with error message
+ * @param {string} message string argument with error message
+ * 
+ */
 
 function displayError(message) {
     const modalHtml = document.createElement('div');

@@ -1,3 +1,11 @@
+/** @module empty-list */
+
+/**
+ * 
+ * This function displays message that list of repositories is empty
+ * 
+ */
+
 function createEmptyListMessage() {
     const emptyListHtml = document.createElement('div');
     emptyListHtml.className = 'empty-list';
