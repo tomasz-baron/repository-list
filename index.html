@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>User's repositories list</title>
-        <script src="js/bundle.js" defer></script>
+        <script src="js/http-request.js"></script>
+        <script src="js/error-message.js"></script>
+        <script src="js/empty-list.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcomponentsjs/1.0.14/webcomponents-hi-sd-ce.js"></script>
+        <link rel="import" href="components/repository-list/repository-list.component.html">
+        <!-- <script src="dist/bundle.js"></script> -->
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
         <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
     </head>
     <body>
-        <repos data-user="devballteam" data-update="2017-05-01">
+        <repository-list user="devballteam" update="2019-05-01">
     </body>
 </html>
-

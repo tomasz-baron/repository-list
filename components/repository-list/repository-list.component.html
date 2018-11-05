@@ -1,0 +1,25 @@
+<template id="rl-tpl">
+    <style>
+        @import '/components/repository-list/repository-list.component.css';
+    </style>
+    <div class="container">
+        <div id="header">
+            <span class="user-name">Repositories list for username: <span id="userName"></span></span>
+        </div>
+        <div id="content">
+            <div class="repos-list">
+                <div class="header">
+                    <div class="row">
+                        <div class="cell cell-name">Name</div>
+                        <div class="cell cell-description">Description</div>
+                        <div class="cell cell-updated-at">Update date</div>
+                        <div class="cell cell-link">Link</div>
+                    </div>
+                </div>
+                <div id="content-list"></div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script src="repository-list.component.js"></script>
