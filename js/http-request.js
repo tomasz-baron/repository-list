@@ -9,9 +9,10 @@
  */
 
 getList = (userName) => {
-    let auth = btoa( "tomasz-baron:" );
+    //let auth = btoa( "tomasz-baron:" );
     const url = `https://api.github.com/users/${userName}/repos`;
-    return fetch(url, {headers: { Authorization: "Basic " + auth }})
+    //return fetch(url, {headers: { Authorization: "Basic " + auth }})
+    return fetch(url)
         .then(response => {
             if (response.ok) {
                 return response.json();
